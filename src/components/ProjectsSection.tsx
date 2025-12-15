@@ -1,4 +1,4 @@
-type Project = { name: string; description: string; tech: string[]; link?: string };
+type Project = { name: string; description: string; tech: string[]; link?: string; image: string };
 
 const projectsSection = {
   id: "projects",
@@ -8,23 +8,14 @@ const projectsSection = {
     "Representative projects that emphasize clarity, performance, and maintainable delivery.",
   projects: [
     {
-      name: "Portfolio Website",
-      description: "Modern personal site with React, Tailwind, DaisyUI, and theme support.",
-      tech: ["React", "TypeScript", "Tailwind CSS", "DaisyUI"],
+      name: "Careera",
+      image: "/src/assets/careera.png",
+      description: "Careera is a web-based system that helps students select college courses by evaluating their skills and preferences through an assessment exam and matching them with the most suitable courses using a sorting algorithm.",
+      tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
       link: "#",
     },
-    {
-      name: "Task Manager App",
-      description: "Full‑stack task manager with auth, filtering, and a REST API backend.",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
-      link: "#",
-    },
-    {
-      name: "E‑commerce Landing",
-      description: "Conversion‑focused landing page with product highlights and pricing.",
-      tech: ["React", "Tailwind CSS"],
-      link: "#",
-    },
+ 
+  
   ] as Project[],
 };
 
@@ -49,6 +40,7 @@ export default function ProjectsSection() {
           >
             <div className="card-body">
               <h3 className="card-title text-lg">{project.name}</h3>
+              <img className="bg-cover" src={project.image} alt={project.name} />
               <p className="mt-1 text-sm text-base-content/75">{project.description}</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {project.tech.map((tag) => (

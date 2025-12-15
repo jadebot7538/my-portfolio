@@ -14,20 +14,21 @@ const experience = {
     "Practical experience delivering UI and full‑stack features, collaborating with teams, and keeping quality high.",
   items: [
     {
-      role: "Front‑End Developer",
-      company: "Freelance",
-      period: "2023 – Present",
+      role: "Full‑Stack Developer",
+      company: "Capstone Projects",
+      period: "January 2024 – December 2024",
       description:
-        "Built responsive interfaces for small businesses with React and Tailwind, focusing on usability and performance.",
-      tech: ["React", "Tailwind CSS", "TypeScript"],
+        "Designed and developed the database and core system for Careera, a platform that assists students in selecting suitable college courses. Integrated an assessment exam and sorting algorithm to provide personalized course recommendations, ensuring students are guided toward the most appropriate academic path.",
+      tech: ["PHP", "Javascript", "MySQL", "Bootstrap"],
     },
     {
-      role: "Full‑Stack Developer",
-      company: "Personal Projects",
-      period: "2022 – Present",
+      role: "Data Controller / Web Developer (Job Order & Internship)",
+      company:
+        "National Irrigation Administration Upper Pampanga Integrated Irrigation Systems (NIA UPRIIS)",
+      period: "January 2025 – Present",
       description:
-        "Developed full‑stack apps with PHP/MySQL and Node/Express, including auth, CRUD, and dashboards.",
-      tech: ["PHP", "MySQL", "Node.js", "Express"],
+        "Developed and maintained internal web applications to streamline organizational processes, ensuring data accuracy and efficient system performance. Independently deployed online systems and provided IT support, including troubleshooting and managing technical setups for meetings and organizational events.",
+      tech: ["PHP", "Javascript", "MySQL", "MSSQL", "Bootstrap"],
     },
   ] as ExperienceItem[],
 };
@@ -36,8 +37,12 @@ export default function ExperienceSection() {
   return (
     <section id={experience.id} className="space-y-5">
       <header>
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary/80">{experience.eyebrow}</p>
-        <h2 className="mt-2 text-3xl font-semibold tracking-tight">{experience.title}</h2>
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary/80">
+          {experience.eyebrow}
+        </p>
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+          {experience.title}
+        </h2>
         <p className="mt-2 max-w-3xl text-base leading-relaxed text-base-content/75">
           {experience.description}
         </p>
@@ -58,10 +63,15 @@ export default function ExperienceSection() {
                 {exp.period}
               </p>
             </div>
-            <p className="mt-3 text-sm leading-relaxed text-base-content/80">{exp.description}</p>
+            <p className="mt-3 text-sm leading-relaxed text-base-content/80">
+              {exp.description}
+            </p>
             <div className="mt-3 flex flex-wrap gap-2">
               {exp.tech.map((tech) => (
-                <span key={tech} className="badge badge-outline border-base-300 text-xs">
+                <span
+                  key={tech}
+                  className="badge badge-outline border-base-300 text-xs"
+                >
                   {tech}
                 </span>
               ))}

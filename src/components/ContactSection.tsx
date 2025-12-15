@@ -2,9 +2,9 @@ const contact = {
   id: "contact",
   title: "Let’s work together",
   description: "Have an opportunity or idea? I’m always open to discussing new projects.",
-  email: "your.email@example.com",
+  email: "ronieljjadee@gmail.com",
   socials: [
-    { name: "GitHub", href: "https://github.com/your-username" },
+    { name: "GitHub", href: "https://github.com/jadebot7538" },
     { name: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },
   ],
 };
@@ -56,7 +56,7 @@ export default function ContactSection() {
 
         <div className="mt-8 flex flex-col gap-2 border-t border-base-200 pt-4 text-xs text-base-content/60 md:flex-row md:items-center md:justify-between">
           <span>© {new Date().getFullYear()} Roniel Jade D. Verdadero</span>
-          <span>Built with React & Tailwind CSS</span>
+          <span></span>
         </div>
       </div>
     </footer>

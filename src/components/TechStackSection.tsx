@@ -1,27 +1,30 @@
-
 const techStack = {
   id: "techstack",
   eyebrow: "Tech Stack",
   title: "Tools I Build With",
   description:
-    "A focused, modern stack centered on React and TypeScript, with tooling that keeps delivery fast and maintainable.",
+    "A practical technology stack focused on building reliable web applications and supporting real-world systems.",
   groups: [
     {
       title: "Frontend",
       description: "UI frameworks and styling.",
       items: [
-        { name: "React", level: "Advanced", tone: "primary" },
-        { name: "TypeScript", level: "Advanced", tone: "info" },
-        { name: "Tailwind CSS", level: "Advanced", tone: "secondary" },
+        { name: "HTML5", level: "Advanced", tone: "primary" },
+        { name: "CSS3", level: "Advanced", tone: "info" },
+        { name: "Javascript", level: "Intermediate", tone: "secondary" },
+        { name: "React", level: "Entry", tone: "primary" },
+        { name: "TypeScript", level: "Entry", tone: "info" },
+        { name: "Tailwind CSS", level: "Entry", tone: "secondary" },
       ],
     },
     {
       title: "Backend",
       description: "APIs and data layers.",
       items: [
+        { name: "PHP", level: "Intermediate", tone: "success" },
         { name: "Node.js", level: "Intermediate", tone: "success" },
         { name: "Express", level: "Intermediate", tone: "success" },
-        { name: "PHP / MySQL", level: "Intermediate", tone: "neutral" },
+        { name: "MSSQL/MySQL", level: "Intermediate", tone: "neutral" },
       ],
     },
     {
@@ -35,7 +38,10 @@ const techStack = {
   ],
 } as const;
 
-const toneClasses: Record<(typeof techStack.groups)[number]["items"][number]["tone"], string> = {
+const toneClasses: Record<
+  (typeof techStack.groups)[number]["items"][number]["tone"],
+  string
+> = {
   primary: "bg-primary/10 text-primary",
   secondary: "bg-secondary/10 text-secondary",
   accent: "bg-accent/10 text-accent",
@@ -48,8 +54,12 @@ export default function TechStackSection() {
   return (
     <section id={techStack.id} className="space-y-6">
       <header>
-        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary/80">{techStack.eyebrow}</p>
-        <h2 className="mt-2 text-3xl font-semibold tracking-tight">{techStack.title}</h2>
+        <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary/80">
+          {techStack.eyebrow}
+        </p>
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+          {techStack.title}
+        </h2>
         <p className="mt-2 max-w-3xl text-base leading-relaxed text-base-content/75">
           {techStack.description}
         </p>
@@ -64,7 +74,9 @@ export default function TechStackSection() {
             <header className="flex items-center justify-between gap-3">
               <div>
                 <h3 className="text-base font-semibold">{group.title}</h3>
-                <p className="mt-1 text-xs text-base-content/70">{group.description}</p>
+                <p className="mt-1 text-xs text-base-content/70">
+                  {group.description}
+                </p>
               </div>
               <div className="h-9 w-9 rounded-xl bg-base-200/80 ring-1 ring-base-300" />
             </header>
@@ -73,7 +85,9 @@ export default function TechStackSection() {
               {group.items.map((item) => (
                 <li
                   key={item.name}
-                  className={`flex items-center justify-between gap-3 rounded-xl border border-base-200 px-3 py-2 text-sm ${toneClasses[item.tone]} transition-colors`}
+                  className={`flex items-center justify-between gap-3 rounded-xl border border-base-200 px-3 py-2 text-sm ${
+                    toneClasses[item.tone]
+                  } transition-colors`}
                 >
                   <div className="flex items-center gap-2">
                     <span className="h-1.5 w-1.5 rounded-full bg-current" />
