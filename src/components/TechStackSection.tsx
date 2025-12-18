@@ -9,30 +9,34 @@ const techStack = {
       title: "Frontend",
       description: "UI frameworks and styling.",
       items: [
-        { name: "HTML5", level: "Advanced", tone: "primary" },
-        { name: "CSS3", level: "Advanced", tone: "info" },
-        { name: "Javascript", level: "Intermediate", tone: "secondary" },
-        { name: "React", level: "Entry", tone: "primary" },
-        { name: "TypeScript", level: "Entry", tone: "info" },
-        { name: "Tailwind CSS", level: "Entry", tone: "secondary" },
+        { name: "HTML5", level: "Advanced", tone: "primary" },      // 4
+        { name: "CSS3", level: "Advanced", tone: "primary" },          // 4
+        { name: "Bootstrap", level: "Advanced", tone: "primary" },   // 4
+        { name: "Javascript", level: "Intermediate", tone: "info" }, // 3
+        { name: "React", level: "Junior", tone: "success" },        // 2
+        { name: "TypeScript", level: "Beginner", tone: "neutral" },   // 2
+        { name: "Tailwind CSS", level: "Beginner", tone: "neutral" }, // 2
       ],
     },
     {
       title: "Backend",
       description: "APIs and data layers.",
       items: [
-        { name: "PHP", level: "Intermediate", tone: "success" },
-        { name: "Node.js", level: "Intermediate", tone: "success" },
-        { name: "Express", level: "Intermediate", tone: "success" },
-        { name: "MSSQL/MySQL", level: "Intermediate", tone: "neutral" },
+        { name: "PHP", level: "Advanced", tone: "primary" },        // 4
+        { name: "MySQL", level: "Advanced", tone: "primary" },      // 4
+        { name: "MSSQL", level: "Intermediate", tone: "info" },// 3
+        { name: "Node.js", level: "Beginner", tone: "neutral" },    // 1
       ],
     },
     {
       title: "DevOps & Tools",
       description: "Collaboration and delivery.",
       items: [
-        { name: "Git / GitHub", level: "Advanced", tone: "neutral" },
-        { name: "Docker", level: "Intermediate", tone: "accent" },
+        { name: "Vs Code", level: "Expert", tone: "secondary" }, // (set to 3; adjust if different)
+        { name: "Git / GitHub", level: "Advanced", tone: "primary" }, // 4
+        { name: "Figma", level: "Intermediate", tone: "info" }, // (set to 3; adjust if different)
+        { name: "Canva", level: "Intermediate", tone: "info" }, // (set to 3; adjust if different)
+     
       ],
     },
   ],

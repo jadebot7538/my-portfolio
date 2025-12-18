@@ -1,20 +1,36 @@
+import careeraImage from "../assets/careera.png";
+import ICTSprtImage from "../assets/ICT-support-system.png";
 type Project = { name: string; description: string; tech: string[]; link?: string; image: string };
+
 
 const projectsSection = {
   id: "projects",
   eyebrow: "Projects",
   title: "Selected Work",
   description:
-    "Representative projects that emphasize clarity, performance, and maintainable delivery.",
+    "Representative projects focused on clarity, performance, and real-world usability.",
   projects: [
     {
       name: "Careera",
-      image: "/src/assets/careera.png",
+      image: careeraImage,
       description: "Careera is a web-based system that helps students select college courses by evaluating their skills and preferences through an assessment exam and matching them with the most suitable courses using a sorting algorithm.",
       tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
       link: "#",
     },
- 
+  {
+      name: "Vehicle Dispatch System",
+      image: careeraImage,
+      description: "A web-based system for monitoring vehicle deployment and maintaining historical records of vehicle locations and trips through a centralized interface.",
+      tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
+      link: "#",
+    },  {
+      name: "ICT Support Ticketing System",
+      image: ICTSprtImage,
+      description: "ICT Support Ticketing System is a web-based application developed to manage and track technical support requests from multiple offices. The system allows users to submit issues such as printer repairs, software problems, and hardware concerns, while enabling ICT staff to monitor request status, prioritize tasks, and maintain a history of resolved tickets through a centralized interface.",
+      tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
+      link: "#",
+    },
+  
   
   ] as Project[],
 };
