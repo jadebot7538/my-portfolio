@@ -48,7 +48,6 @@ const toneClasses: Record<
 > = {
   primary: "bg-primary/10 text-primary",
   secondary: "bg-secondary/10 text-secondary",
-  accent: "bg-accent/10 text-accent",
   info: "bg-info/10 text-info",
   success: "bg-success/10 text-success",
   neutral: "bg-base-200 text-base-content/80",
