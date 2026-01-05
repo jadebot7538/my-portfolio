@@ -25,7 +25,7 @@ const experience = {
       role: "Data Controller / Web Developer (Job Order & Internship)",
       company:
         "National Irrigation Administration Upper Pampanga Integrated Irrigation Systems (NIA UPRIIS)",
-      period: "January 2025 – Present",
+      period: "January 2025 – December 2025",
       description:
         "Developed and maintained internal web applications to streamline organizational processes, ensuring data accuracy and efficient system performance. Independently deployed online systems and provided IT support, including troubleshooting and managing technical setups for meetings and organizational events.",
       tech: ["PHP", "Javascript", "MySQL", "MSSQL", "Bootstrap"],
@@ -40,10 +40,10 @@ export default function ExperienceSection() {
         <p className="text-xs font-semibold uppercase tracking-[0.28em] text-primary/80">
           {experience.eyebrow}
         </p>
-        <h2 className="mt-2 text-3xl font-semibold tracking-tight">
+        <h2 className="mt-2 text-3xl font-semibold tracking-tight ">
           {experience.title}
         </h2>
-        <p className="mt-2 max-w-3xl text-base leading-relaxed text-base-content/75">
+        <p className="mt-2 max-w-3xl text-base leading-relaxed  text-base-content/75">
           {experience.description}
         </p>
       </header>

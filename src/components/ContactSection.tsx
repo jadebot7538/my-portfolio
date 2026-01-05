@@ -5,7 +5,7 @@ const contact = {
   email: "ronieljjadee@gmail.com",
   socials: [
     { name: "GitHub", href: "https://github.com/jadebot7538" },
-    { name: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },
+    { name: "JobStreet", href: "https://ph.jobstreet.com/profiles/3MlDfXYSJG" },
   ],
 };
 

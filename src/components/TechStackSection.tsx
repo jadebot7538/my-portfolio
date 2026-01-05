@@ -22,20 +22,20 @@ const techStack = {
       title: "Backend",
       description: "APIs and data layers.",
       items: [
-        { name: "PHP", level: "Advanced", tone: "primary" },        // 4
-        { name: "MySQL", level: "Advanced", tone: "primary" },      // 4
-        { name: "MSSQL", level: "Intermediate", tone: "info" },// 3
-        { name: "Node.js", level: "Beginner", tone: "neutral" },    // 1
+        { name: "PHP", level: "Advanced", tone: "primary" },       
+        { name: "MySQL", level: "Advanced", tone: "primary" },     
+        { name: "MSSQL", level: "Intermediate", tone: "info" },
+        { name: "Node.js", level: "Beginner", tone: "neutral" },    
       ],
     },
     {
       title: "DevOps & Tools",
       description: "Collaboration and delivery.",
       items: [
-        { name: "Vs Code", level: "Expert", tone: "secondary" }, // (set to 3; adjust if different)
-        { name: "Git / GitHub", level: "Advanced", tone: "primary" }, // 4
-        { name: "Figma", level: "Intermediate", tone: "info" }, // (set to 3; adjust if different)
-        { name: "Canva", level: "Intermediate", tone: "info" }, // (set to 3; adjust if different)
+        { name: "Vs Code", level: "Expert", tone: "secondary" }, 
+        { name: "Git / GitHub", level: "Advanced", tone: "primary" }, 
+        { name: "Figma", level: "Intermediate", tone: "info" }, 
+        { name: "Canva", level: "Intermediate", tone: "info" },
      
       ],
     },

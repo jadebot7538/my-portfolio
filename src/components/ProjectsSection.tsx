@@ -1,5 +1,6 @@
 import careeraImage from "../assets/careera.png";
 import ICTSprtImage from "../assets/ICT-support-system.png";
+import dipatchImage from "../assets/dispatch.png";
 type Project = { name: string; description: string; tech: string[]; link?: string; image: string };
 
 
@@ -15,20 +16,20 @@ const projectsSection = {
       image: careeraImage,
       description: "Careera is a web-based system that helps students select college courses by evaluating their skills and preferences through an assessment exam and matching them with the most suitable courses using a sorting algorithm.",
       tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
-      link: "#",
+      link: "https://github.com/jadebot7538/Careera.git",
     },
   {
       name: "Vehicle Dispatch System",
-      image: careeraImage,
+      image: dipatchImage,
       description: "A web-based system for monitoring vehicle deployment and maintaining historical records of vehicle locations and trips through a centralized interface.",
-      tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
-      link: "#",
+      tech: ["PHP", "Javascript", "MSSQL", "Bootstrap"],
+      link: "https://github.com/jadebot7538/Vehicle-Dispatch-System.git",
     },  {
       name: "ICT Support Ticketing System",
       image: ICTSprtImage,
       description: "ICT Support Ticketing System is a web-based application developed to manage and track technical support requests from multiple offices. The system allows users to submit issues such as printer repairs, software problems, and hardware concerns, while enabling ICT staff to monitor request status, prioritize tasks, and maintain a history of resolved tickets through a centralized interface.",
       tech: ["PHP", "Javascript", "MYSQL", "Bootstrap"],
-      link: "#",
+      link: "https://github.com/jadebot7538/ICT-Support-System.git",
     },
   
   
