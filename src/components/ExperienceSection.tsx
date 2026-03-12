@@ -27,7 +27,7 @@ const experience = {
         "National Irrigation Administration Upper Pampanga Integrated Irrigation Systems (NIA UPRIIS)",
       period: "January 2025 – December 2025",
       description:
-        "Developed and maintained internal web applications to streamline organizational processes, ensuring data accuracy and efficient system performance. Independently deployed online systems and provided IT support, including troubleshooting and managing technical setups for meetings and organizational events.",
+        "Developed and maintained internal web applications to streamline organizational processes, ensuring data accuracy and efficient system performance. Gained experience deploying online systems and integrating them with other platforms by collaborating with developers, while providing IT support—including troubleshooting and managing technical setups for meetings and organizational events.",
       tech: ["PHP", "Javascript", "MySQL", "MSSQL", "Bootstrap"],
     },
   ] as ExperienceItem[],

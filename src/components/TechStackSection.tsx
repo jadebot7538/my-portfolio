@@ -25,6 +25,7 @@ const techStack = {
         { name: "PHP", level: "Advanced", tone: "primary" },       
         { name: "MySQL", level: "Advanced", tone: "primary" },     
         { name: "MSSQL", level: "Intermediate", tone: "info" },
+        { name: "Wordpress", level: "Beginner", tone: "neutral" },
         { name: "Node.js", level: "Beginner", tone: "neutral" },    
       ],
     },
@@ -36,6 +37,8 @@ const techStack = {
         { name: "Git / GitHub", level: "Advanced", tone: "primary" }, 
         { name: "Figma", level: "Intermediate", tone: "info" }, 
         { name: "Canva", level: "Intermediate", tone: "info" },
+        { name: "Cloudflare", level: "Beginner", tone: "neutral" },
+        { name: "Hostinger", level: "Beginner", tone: "neutral" },
      
       ],
     },
